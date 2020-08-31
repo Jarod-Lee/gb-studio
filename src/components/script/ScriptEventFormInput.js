@@ -135,6 +135,17 @@ class ScriptEventFormInput extends Component {
         <div key="1" className="FormCheckbox" />
       ];
     }
+    if (type === "button") {
+      return [
+          <div
+            key="edit"
+            className="SelectRenamable__EditBtn"
+            onClick={this.onStartEdit}
+          >
+            {field.text}
+          </div>
+      ];
+    }
     if (type === "select") {
       return (
         <select

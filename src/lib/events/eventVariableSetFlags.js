@@ -64,6 +64,11 @@ const fields = [
     width: "50%",
     defaultValue: false
   },
+  {
+    key: "rename_flags",
+    type: "button",
+    text: "Rename Flags",
+  }
 ];
 
 const compile = (input, helpers) => {
